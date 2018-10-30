@@ -10,7 +10,7 @@ This Notebook is about my daily study about areas of programming, machine_learni
   * json
   * time
   * dask
-  * warings
+  * warnings
 * Science Calculation:
   * Division:
     * Traditional Division:
