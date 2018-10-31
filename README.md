@@ -4,14 +4,14 @@ This Notebook is about my daily study about areas of programming, machine_learni
 ## Programming
 ### Python(2.x, 3.x)
 #### [Basis](/Programming/Python/Basis)
-#### [Library](/Programming/Python/Lirary)
-* [OS_Library](/Programming/Python/Lirary/OS_Library)
-* [DA_Library](/Programming/Python/Lirary/DA_Library)
-* [ML_Library](/Programming/Python/Lirary/ML_Library)
-* [DL_Library](/Programming/Python/Lirary/DL_Library)
-* [DV_Library](/Programming/Python/Lirary/DV_Library)
-* [WB_Library](/Programming/Python/Lirary/WB_Library)
-* [DB_Library](/Programming/Python/Lirary/DB_Library)
+#### [Library](/Programming/Python/Library)
+* [OS_Library](/Programming/Python/Library/OS_Library)
+* [DA_Library](/Programming/Python/Library/DA_Library)
+* [ML_Library](/Programming/Python/Library/ML_Library)
+* [DL_Library](/Programming/Python/Library/DL_Library)
+* [DV_Library](/Programming/Python/Library/DV_Library)
+* [WB_Library](/Programming/Python/Library/WB_Library)
+* [DB_Library](/Programming/Python/Library/DB_Library)
 
 ### SQL
 * SQL
