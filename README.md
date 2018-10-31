@@ -1,8 +1,8 @@
-#Daily-Notebook
+# Daily-Notebook
 ---
 This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily study about areas of programming, machine_learning,</bn> data_mining & project_experience
 
-#Programming
+# Programming
 ---
 ## Python(2.x, 3.x)
 ### Basis
