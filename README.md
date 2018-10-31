@@ -25,15 +25,16 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 
 # Machine Learning
 ---
-## [Algorithm](/Machine_Learning/Algorithm)
+## Algorithm
 * :star: [<font size=+1>Ridge_Regression</font>](/Machine_Learning/Algorithm/Ridge_Rgression)
 * :star: [<font size=+1>Logistic_Regression</font>](/Machine_Learning/Algorithm/Logistic_Regression)
 * :star: [<font size=+1>Random_Forest</font>](/Machine_Learning/Algorithm/Random_Forest)
-
+* :star: [<font size=+1>SVM</font>](/Machine_Learning/Algorithm/SVM)
 # Deep Learning
 ---
-## [Algorithm](/Deep_Learning/Algorithm)
-
+## Algorithm
+* :star: [<font size=+1>CNN</font>](/Deep_Learning/Algorithm/CNN)
+* :star: [<font size=+1>RNN</font>](/Deep_Learning/Algorithm/RNN)
 # Leetcode
 ---
 
