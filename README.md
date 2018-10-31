@@ -23,9 +23,9 @@ This Notebook is about my daily study about areas of programming, machine_learni
 
 ## Machine Learning
 ### [Algorithm](/Machine_Learning/Algorithm)
-* Ridge_Regression
-* Logistic_Regression
-* Random_Forest
+* :: [<font size=+1>Ridge_Regression</font>](/Machine_Learning/Algorithm/Ridge_Rgression)
+* :: [<font size=+1>Logistic_Regression</font>](/Machine_Learning/Algorithm/Logistic_Regression)
+* :: [<font size=+1>Random_Forest</font>](/Machine_Learning/Algorithm/Random_Forest)
 
 
 ## Deep Learning
