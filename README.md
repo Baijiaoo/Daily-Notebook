@@ -1,12 +1,12 @@
-Daily-Notebook
+#Daily-Notebook
 ---
 This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily study about areas of programming, machine_learning,</bn> data_mining & project_experience
 
-Programming
+#Programming
 ---
-# Python(2.x, 3.x)
-## Basis
-## Library
+## Python(2.x, 3.x)
+### Basis
+### Library
 * :banana: [<font size=+1>OS_Library</font>](/Programming/Python/Library/OS_Library)
 * :melon: [<font size=+1>DA_Library</font>](/Programming/Python/Library/DA_Library)
 * :watermelon: [<font size=+1>ML_Library</font>](/Programming/Python/Library/ML_Library)
@@ -15,25 +15,25 @@ Programming
 * :orange: [<font size=+1>WB_Library</font>](/Programming/Python/Library/WB_Library)
 * :pear: [<font size=+1>DB_Library</font>](/Programming/Python/Library/DB_Library)
 
-# SQL
+## SQL
 * :eggplant: [<font size=+1>SQL</font>](/Programming/SQL/SQL)
 * :tomato: [<font size=+1>P-SQL</font>](/Programming/SQL/P-SQL)
 * :potato: [<font size=+1>No-SQL</font>](/Programming/SQL/No-SQL)
 
-Mathematical Basis
+# Mathematical Basis
 ---
 
-Machine Learning
+# Machine Learning
 ---
-# [Algorithm](/Machine_Learning/Algorithm)
+## [Algorithm](/Machine_Learning/Algorithm)
 * :star: [<font size=+1>Ridge_Regression</font>](/Machine_Learning/Algorithm/Ridge_Rgression)
 * :star: [<font size=+1>Logistic_Regression</font>](/Machine_Learning/Algorithm/Logistic_Regression)
 * :star: [<font size=+1>Random_Forest</font>](/Machine_Learning/Algorithm/Random_Forest)
 
-Deep Learning
+# Deep Learning
 ---
-# [Algorithm](/Deep_Learning/Algorithm)
+## [Algorithm](/Deep_Learning/Algorithm)
 
-Leetcode
+# Leetcode
 ---
 
