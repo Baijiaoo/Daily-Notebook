@@ -1,6 +1,6 @@
 # Daily-Notebook
 ---
-This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily study about areas of programming, machine_learning,</bn> data_mining & project_experience
+This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily study in areas of programming, machine_learning,</bn> data_mining & project_experience
 
 # Programming
 ---
