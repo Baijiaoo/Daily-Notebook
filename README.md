@@ -3,15 +3,15 @@ This Notebook is about my daily study about areas of programming, machine_learni
 
 ## Programming
 ### Python(2.x, 3.x)
-#### Basis
-#### Library
-* OS_Library
-* DA_Library
-* ML_Library
-* DL_Library
-* DV_Library
-* WB_Library
-* DB_Library
+#### [Basis](/Programming/Python/Basis)
+#### [Library](/Programming/Python/Lirary)
+* [OS_Library](/Programming/Python/Lirary/OS_Library)
+* [DA_Library](/Programming/Python/Lirary/DA_Library)
+* [ML_Library](/Programming/Python/Lirary/ML_Library)
+* [DL_Library](/Programming/Python/Lirary/DL_Library)
+* [DV_Library](/Programming/Python/Lirary/DV_Library)
+* [WB_Library](/Programming/Python/Lirary/WB_Library)
+* [DB_Library](/Programming/Python/Lirary/DB_Library)
 
 ### SQL
 * SQL
@@ -22,11 +22,11 @@ This Notebook is about my daily study about areas of programming, machine_learni
 ## Mathematical Basis
 
 ## Machine Learning
-### Algorithm
+### [Algorithm](/Machine_Learning/Algorithm)
 
 
 ## Deep Learning
-### Algorithm
+### [Algorithm](/Deep_Learning/Algorithm)
 
 ## Leetcode
 
