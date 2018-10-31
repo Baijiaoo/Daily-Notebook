@@ -14,9 +14,9 @@ This Notebook is about my daily study about areas of programming, machine_learni
 * [DB_Library](/Programming/Python/Library/DB_Library)
 
 ### SQL
-* SQL
-* P-SQL
-* No-SQL
+* [SQL](/Programming/SQL/SQL)
+* P-SQL(/Programming/SQL/P-SQL)
+* No-SQL(/Programming/SQL/No-SQL)
 
 
 ## Mathematical Basis
