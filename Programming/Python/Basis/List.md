@@ -33,9 +33,8 @@
 list_ = [1,2,3,4]
 print list_[0]
 print list_[-1]
- 
- 1
- 4
+1
+4
  ```
  * **list[start,end,step]**</br>
  `start`--起始索引</br>
@@ -45,7 +44,6 @@ print list_[-1]
  ```python
  list_ = [1,2,3,4,5]
  list[0:3:1]
- 
  [1,2,3]
  ``` 
  ### 列表脚本操作符
@@ -61,7 +59,6 @@ print list_[-1]
  ```python
  list_ = [1,2,3,4]
  print len(list_)
- 
  4
  ```
  * **max(list)** 返回列表中最大的值
@@ -74,16 +71,14 @@ print list_[-1]
  * **min(list)** 返回列表中最小的值
  ```python
  list_ = [1,2,3,4,5]
- print min(list_)
- 
+ print min(list_) 
  1
  ```
  * **list(seq)** 将元组转化为列表</br>
  **注:** 元组和列表非常类似，但是元组不能修改并且是用圆括号
  ```python
  seq = (1,2,3,4)
- print (list(seq))
- 
+ print (list(seq)) 
  [1,2,3,4]
  ```
  
@@ -91,9 +86,8 @@ print list_[-1]
  * **list.append(obj)** 列表末尾追加元素
  ```python
  list_ = [1,2,3,4]
- list_.append()
- print list_
- 
+ list_.append(5)
+ list_ 
  [1,2,3,4,5]
  ```
  * **list.extend(obj)** 将一个列表中的全部元素添加到另一个列表中
@@ -101,57 +95,49 @@ print list_[-1]
  list_1 = [1,2,3,4]
  list_2 = [5,6,7]
  list_1.extend(list_2)
- list_1
- 
+ list_1 
  [1,2,3,4,5,6,7]
  ```
  * **list.insert(index,obj)** 指定索引位置添加元素
  ```python
  list_ = [2,3,4,5]
  list_.insert(0,1)
- print list_
- 
+ list_ 
  [1,2,3,4,5]
  ```
  * **list.pop([index=-1])** 默认删除列表末尾的元素,并且返回该元素的值
  ```python
  list_ = [1,2,3,4,5]
  print(list_.pop())
- 
  5
  list_
- 
  [1,2,3,4]
  ```
  * **list.remove(obj)** 删除列表中指定的元素
  ```python
  list_ = [1,2,3,4,5]
  list_.remove(3)
- list_
- 
+ list_ 
  [1,2,4,5]
  ```
  * **list.count(obj)** 统计列表中某个元素出现的次数
  ```python
  list_ = [1,1,1,2,3]
- print list_.count(1)
- 
+ print list_.count(1) 
  3
  ```
  * **list.index(obj)** 用于从列表中找出指定值第一个匹配项的索引位置,如果没有找到就会抛出异常
  ```python
  list_ = [1,1,2,3,4,5]
  print (list_.index(1))
- print (list_.index(1,2))
- 
+ print (list_.index(1,2)) 
  0
  1
  ```
  * **list.reverse()** 没有返回值，直接将列表反转排序
  ```python
  list_ = [1,2,3,4,5]
- print list_.reverse()
- 
+ print list_.reverse() 
  [5,4,3,2,1]
  ```
  * **list.sort(cmp=None, key=None, reverse=False)** </br>
@@ -162,21 +148,18 @@ print list_[-1]
  ```python
  list_ = ['Google','Facebook','Tencent']
  print list_.sort(reverse=True)
- 
  ['Tencent','Google', 'Facebook']
  
  list_ = [(4,2),(3,3),(1,1),(6,4)]
  def cmp_second(element):
      return element[1]
  print list_.sort(key=cmp_second)
- 
  [(1,1),(4,2),(3,3),(6,4)]
  ```
  * **list.clear()** 清空一个列表
  ```python
  list_ = [1,2,3,4]
  print list_.clear()
- 
  []
  ```
  * **list.copy()** 深度拷贝一个列表到另一个地址中
@@ -184,7 +167,6 @@ print list_[-1]
  list_1 = [1,2,3,4]
  list_2 = list_1.copy()
  list_2
- 
  [1,2,3,4]
  ```
  ## 列表的高级操作
@@ -193,7 +175,6 @@ print list_[-1]
  list_ = ['qin','wang','wqc']
  mapping = dict((v,i) for i,v in enumerate(list_))
  mapping
- 
  {'qin':0, 'wang':1, 'wqc':2}
  ```
  * **sorted(list)** 可以将任何序列返回为一个新的有序列表</br>
@@ -218,7 +199,6 @@ list_1 = ['Ling','Zhang']
 list_2 = ['Huchong','Sanfeng']
 for i , (a,b) in enumerate(zip(list_1,list_2)):
     print "%d: %s %s" % (i,a,b)
-
 0: Ling Huchong
 1: Zhang Sanfeng
 ```
