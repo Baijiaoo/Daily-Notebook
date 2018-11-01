@@ -26,6 +26,8 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 
 # Machine Learning
 ---
+## Basis
+* :star: [<font size=+1>Part_1</font>](/Machine_Learning/Basis/Part_1.md)
 ## Algorithm
 * :star: [<font size=+1>Ridge_Regression</font>](/Machine_Learning/Algorithm/Ridge_Rgression)
 * :star: [<font size=+1>Logistic_Regression</font>](/Machine_Learning/Algorithm/Logistic_Regression)
