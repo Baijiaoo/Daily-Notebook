@@ -77,7 +77,7 @@ print list_[-1]
  
  1
  ```
- * **list(seq)** 将元组转化为列表
+ * **list(seq)** 将元组转化为列表</br>
  **注:** 元组和列表非常类似，但是元组不能修改并且是用圆括号
  ```python
  seq = (1,2,3,4)
@@ -153,7 +153,8 @@ print list_[-1]
  
  [5,4,3,2,1]
  ```
- * **list.sort(cmp=None, key=None, reverse=False)** 用于对原列表进行排序, 列表中的元素必须是相同数据类型</br>
+ * **list.sort(cmp=None, key=None, reverse=False)** </br>
+ 用于对原列表进行排序, 列表中的元素必须是相同数据类型</br>
  `cmp`--可选参数，如果指定了该参数会使用该参数的方法进行排序</br>
  `key`-主要用来进行比较的元素，只有一个参数，具体的函数的参数取自可迭代对象中，指定可迭代对象中的一个元素进行排序</br>
  `reverse`-- `reverse=True`降序，`reverse=Flase`升序</br>
