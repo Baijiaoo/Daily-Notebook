@@ -1,16 +1,16 @@
 Part_1
----
+===
 
 Index
 ---
  <!-- TOC -->
  
-* [Bias and Variance](#Bias and Vairance)
-  * [Reason causes Bias & Variance](#Reason causes Bias & Variance)
-  * [Bias & Vairance in Deep Learning](#Bias & Variance in Deep Learning)
-  * [Bias/Variance with Boosting/Bagging](#Bias/Variance with Boosting/Bagging)
-  * [How to calculate Bias & Variance](#How to calculate Bias & Variance)
-  * [Tradeoff in Bias & Variance](#Tradeoff in Bias & Variance)
+* [Bias and Variance](#Bias and Variance)
+  * Reason causes Bias & Variance
+  * Bias & Vairance in Deep Learning
+  * Bias/Variance with Boosting/Bagging
+  * How to calculate Bias & Variance
+  * Tradeoff in Bias & Variance
 
  <!-- TOC -->
  
