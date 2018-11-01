@@ -12,7 +12,7 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 * :melon: [<font size=+1>DA_Library</font>](/Programming/Python/Library/DA_Library)
 * :watermelon: [<font size=+1>ML_Library</font>](/Programming/Python/Library/ML_Library)
 * :orange: [<font size=+1>DL_Library</font>](/Programming/Python/Library/DL_Library)
-* :peach: [<font size=+1>DV_Library</font>](/Programming/Python/Library/DV_Library)
+* :lemon: [<font size=+1>DV_Library</font>](/Programming/Python/Library/DV_Library)
 * :orange: [<font size=+1>WB_Library</font>](/Programming/Python/Library/WB_Library)
 * :pear: [<font size=+1>DB_Library</font>](/Programming/Python/Library/DB_Library)
 
