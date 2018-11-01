@@ -6,6 +6,7 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 ---
 ## Python(2.x, 3.x)
 ### Basis
+* :moon: [<font size=+1>List</font>](/Programming/Python/Basis/List.md)
 ### Library
 * :banana: [<font size=+1>OS_Library</font>](/Programming/Python/Library/OS_Library)
 * :melon: [<font size=+1>DA_Library</font>](/Programming/Python/Library/DA_Library)
