@@ -11,7 +11,7 @@
    * [列表脚本操作符](#列表脚本操作符)
    * [列表函数](#列表函数)
    * [列表方法](#列表方法)
- * [列表的高级操作]()
+ * [列表的高级操作](#列表的高级操作)
  
  <!-- TOC -->
  
@@ -188,3 +188,47 @@ print list_[-1]
  [1,2,3,4]
  ```
  ## 列表的高级操作
+ * **enumerate(list)** 逐个返回序列的`(i,value)`元组
+ ```python
+ list_ = ['qin','wang','wqc']
+ mapping = dict((v,i) for i,v in enumerate(list_))
+ mapping
+ 
+ {'qin':0, 'wang':1, 'wqc':2}
+ ```
+ * **sorted(list)** 可以将任何序列返回为一个新的有序列表</br>
+ **注：** `sort`函数是就地排序
+ ```python
+ sorted(['z','d','c','n'])
+ ['c','d','n','z']
+ ```
+ 常常将`sorted`和`set`结合起来使用得到一个由序列中的唯一元素构成的有序列表</br>
+ `set`和`sorted`是对序列进行操作，当参数不是序列时，会默认转换为列表</br>
+ `set`默认会对元素进行排序
+ ```python
+ set(sorted('my name is boston'))
+(['a', ' ', 'b', 'e', 'i', 'm', 'o', 'n', 's', 't', 'y'])
+```
+* **zip(list1,list2,....)**</br>
+`zip`用于将多个序列(列表，元组等)中的元素"配对", 从而产生一个新的元组列表</br>
+`zip`可以接受任意数量的序列，最终得到的元组数量由最短的序列决定</br>
+`zip`最常见的用法时同时迭代多个序列，还可以结合`enumerate`一起使用</br>
+```python
+list_1 = ['Ling','Zhang']
+list_2 = ['Huchong','Sanfeng']
+for i , (a,b) in enumerate(zip(list_1,list_2)):
+    print "%d: %s %s" % (i,a,b)
+
+0: Ling Huchong
+1: Zhang Sanfeng
+```
+对于已经压缩的(`zipped`)序列，`zip`还有一个很巧妙的用法，即对该序列进行解压(`unzip`,用`*`表示)，其实就是将一组行转换成一组列
+```python
+combo = [('a','b'),(1,2)]
+one,two = zip(*combo)
+one
+('a',1)
+two
+('b',1)
+```
+
