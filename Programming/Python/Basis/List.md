@@ -26,7 +26,7 @@ print list_[-1]
  4
  ```
  * 切片[start,end,step]</br>
- 切片切出来的是子列表,输出的子列表中的最后一个元素的索引是**end-1**
+ 切片切出来的是子列表,输出的子列表中的最后一个元素的索引是`end-1`
  ```python
 list_ = [1,2,3,4,5]
 list[0:3:1]
@@ -40,21 +40,104 @@ list[0:3:1]
  
  5
  ```
- * append() 列表末尾追加元素
+ ### 列表函数&方法
+ * list.append(obj) 列表末尾追加元素
  ```python
  list_ = [1,2,3,4]
- list_.append(5)
+ list_.append()
  print list_
  
  [1,2,3,4,5]
  ```
- * insert() 指定索引位置添加元素
+ * list.extend(obj) 将一个列表中的全部元素添加到另一个列表中
+ ```python
+ list_1 = [1,2,3,4]
+ list_2 = [5,6,7]
+ list_1.extend(list_2)
+ list_1
+ 
+ [1,2,3,4,5,6,7]
+ ```
+ * list.insert(index,obj) 指定索引位置添加元素
  ```python
  list_ = [2,3,4,5]
  list_.insert(0,1)
  print list_
  
  [1,2,3,4,5]
+ ```
+ * list.pop([index=-1]) 默认删除列表末尾的元素,并且返回该元素的值
+ ```python
+ list_ = [1,2,3,4,5]
+ print(list_.pop())
+ 
+ 5
+ list_
+ 
+ [1,2,3,4]
+ ```
+ * list.remove(obj) 删除列表中指定的元素
+ ```python
+ list_ = [1,2,3,4,5]
+ list_.remove(3)
+ list_
+ 
+ [1,2,4,5]
+ ```
+ * list.count(obj) 统计列表中某个元素出现的次数
+ ```python
+ list_ = [1,1,1,2,3]
+ print list_.count(1)
+ 
+ 3
+ ```
+ * list.index(obj) 用于从列表中找出指定值第一个匹配项的索引位置,如果没有找到就会抛出异常
+ ```python
+ list_ = [1,1,2,3,4,5]
+ print (list_.index(1))
+ print (list_.index(1,2))
+ 
+ 0
+ 1
+ ```
+ * list.reverse() 没有返回值，直接将列表反转排序
+ ```python
+ list_ = [1,2,3,4,5]
+ print list_.reverse()
+ 
+ [5,4,3,2,1]
+ ```
+ * list.sort(cmp=None, key=None, reverse=False) 用于对原列表进行排序, 列表中的元素必须是相同数据类型</br>
+ `cmp`--可选参数，如果指定了该参数会使用该参数的方法进行排序</br>
+ `key`-主要用来进行比较的元素，只有一个参数，具体的函数的参数取自可迭代对象中，指定可迭代对象中的一个元素进行排序</br>
+ `reverse`-- `reverse=True`降序，`reverse=Flase`升序</br>
+ ```python
+ list_ = ['Google','Facebook','Tencent']
+ print list_.sort(reverse=True)
+ 
+ ['Tencent','Google', 'Facebook']
+ 
+ list_ = [(4,2),(3,3),(1,1),(6,4)]
+ def cmp_second(element):
+     return element[1]
+ print list_.sort(key=cmp_second)
+ 
+ [(1,1),(4,2),(3,3),(6,4)]
+ ```
+ * list.clear() 清空一个列表
+ ```python
+ list_ = [1,2,3,4]
+ print list_.clear()
+ 
+ []
+ ```
+ * list.copy() 深度拷贝一个列表到另一个地址中
+ ```python
+ list_1 = [1,2,3,4]
+ list_2 = list_1.copy()
+ list_2
+ 
+ [1,2,3,4]
  ```
  
  
