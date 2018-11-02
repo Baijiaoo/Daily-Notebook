@@ -7,9 +7,9 @@ Index
 * [Bias and Variance](#Bias-and-Variance)
   * [Reason causes Bias & Variance](#Reason-causes-Bias-&-Variance)
   * [Bias & Vairance in Deep Learning](#Bias-&-Variance-in-Deep-Learning)
-  * Bias/Variance with Boosting/Bagging
-  * How to calculate Bias & Variance
-  * Tradeoff in Bias & Variance
+  * [Bias/Variance with Boosting/Bagging](#Bias/Variance-with-Boosting/Bagging)
+  * [How to calculate Bias & Variance](#How-to-calculate-Bias-&-Variance)
+  * [Tradeoff in Bias & Variance](#Tradeoff-in-Bias-&-Variance)
 
 <!-- TOC -->
  
@@ -22,7 +22,7 @@ Index
 * **Variance** is used to describe **model stability**
   
 ### Reason causes Bias & Variance
-* Generally **Bias** is caused by we do **warong assumption** on the learning model, or the complexity of modle is not enough
+* Generally **Bias** is caused by we do **wrong assumption** on the learning model, or the complexity of modle is not enough
   * Supposing one real model is nonlinear model, but we apply a linear model on it which will increase **Bias** which we call **underfitting**
   * We can easily find **Bias** from training data, we can also say that **Bias** comes from training data
 * Generally **Vairance** is usually due to the compexity of model relative to the training data being too high
@@ -37,4 +37,16 @@ Index
 ## Bias/Variance with Boosting/Bagging
 
 ## How to calculate Bias & Variance
-* 
+* Model on **Training Data Set**:
+* The expect value of Model
+* **Bias**
+* **Variance**
+* The **Noise** expresses the lower bound of the expected generalization error that any learning algorithm can achieve on the current task, that is, the difficulty of learning the problem itself
+* **Bias-Variance decomposition** indicates that the generalization ability of the model is determined by the ability of the algorithm, the adequacy of the data, and the difficulty of the task itself
+
+## Tradeoff in Bias & Variance
+* Given Task
+ * Unsufficient training, the model has weak fitting ability(**underfitting**), at this time **Bias** is the main reason of **Generalization Error** on the model
+ * With having more training, the model's fitting ability will improve, at this time **Variance** will gradually be the main reason of **Generalization Error** on the model
+ * After Sufficient Training, the model's fitting ability will be overqualified, which we call it **overfitting**，it means that the model has learned **training data self and non-global features**  
+ 
