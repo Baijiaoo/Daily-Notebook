@@ -48,5 +48,7 @@ Index
 * Given Task
  * Unsufficient training, the model has weak fitting ability(**underfitting**), at this time **Bias** is the main reason of **Generalization Error** on the model
  * With having more training, the model's fitting ability will improve, at this time **Variance** will gradually be the main reason of **Generalization Error** on the model
- * After Sufficient Training, the model's fitting ability will be overqualified, which we call it **overfitting**，it means that the model has learned **training data self and non-global features**  
+ * After Sufficient Training, the model's fitting ability will be overqualified, which we call it **overfitting**，it means that the model has learned **training data self and non-global features** 
+   <div align="center"><img src="../Image/20181102.png" height="" /></div>
+
  
