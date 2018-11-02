@@ -4,7 +4,7 @@ Part_1
 Index
 ---
 <!-- TOC -->
-* [Bias and Variance](#Bias-and-Variance)
+* [Bias and Variance](#bias-and-variance)
   * [Reason causes Bias & Variance](#reason-causes-bias-&-variance)
   * [Bias & Vairance in Deep Learning](#Bias-&-Variance-in-Deep-Learning)
   * [Bias/Variance with Boosting/Bagging](#Bias/Variance-with-Boosting/Bagging)
