@@ -5,15 +5,15 @@ Index
 ---
 <!-- TOC -->
 * [Bias and Variance](#Bias-and-Variance)
-  * [Reason causes Bias & Variance](#Reason-causes-Bias-&-Variance)
+  * [Reason causes Bias & Variance](#reason-causes-bias-&-variance)
   * [Bias & Vairance in Deep Learning](#Bias-&-Variance-in-Deep-Learning)
   * [Bias/Variance with Boosting/Bagging](#Bias/Variance-with-Boosting/Bagging)
   * [How to calculate Bias & Variance](#How-to-calculate-Bias-&-Variance)
-  * [Tradeoff in Bias & Variance](#Tradeoff-in-Bias-&-Variance)
+  * [Tradeoff between Bias & Variance](#Tradeoff-between-Bias-&-Variance)
 
 <!-- TOC -->
  
-## Bias-and-Variance
+## Bias and Variance
 * **Bias** and **Variance** are used to evaluate two aspectss of model generalization error
   * The **Bias** of model refers to the difference between the expected value predicted by the model and true value;
   *  The **Variance** of model refers to the sum of the square difference between the expected value and predicted value predicted by the model
@@ -44,7 +44,7 @@ Index
 * The **Noise** expresses the lower bound of the expected generalization error that any learning algorithm can achieve on the current task, that is, the difficulty of learning the problem itself
 * **Bias-Variance decomposition** indicates that the generalization ability of the model is determined by the ability of the algorithm, the adequacy of the data, and the difficulty of the task itself
 
-## Tradeoff in Bias & Variance
+## Tradeoff between Bias & Variance
 * Given Task
  * Unsufficient training, the model has weak fitting ability(**underfitting**), at this time **Bias** is the main reason of **Generalization Error** on the model
  * With having more training, the model's fitting ability will improve, at this time **Variance** will gradually be the main reason of **Generalization Error** on the model
