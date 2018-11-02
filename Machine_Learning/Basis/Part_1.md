@@ -13,7 +13,7 @@ Index
 
 <!-- TOC -->
  
-## Bias and Variance
+## Bias-and-Variance
 * **Bias** and **Variance** are used to evaluate two aspectss of model generalization error
   * The **Bias** of model refers to the difference between the expected value predicted by the model and true value;
   *  The **Variance** of model refers to the sum of the square difference between the expected value and predicted value predicted by the model
