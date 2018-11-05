@@ -11,7 +11,7 @@ Index
     * [Updating Tuple](#updating-tuple)
     * [Deleting elements in Tuple](#deleting-elements-in-tuple)
     * [Tuple Operators](#tuple-operators)
-    * [Built-in functions of Tuple](#builtin-functions-of-tuple)
+    * [Built-in functions of Tuple](#built-in-functions-of-tuple)
 
 ### Defination and characteristic of Tuple
 Python tuples are similar to lists, except that the elements of the tuple cannot be modified</br>
