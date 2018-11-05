@@ -11,7 +11,7 @@ Index
     * Updating Tuple
     * Deleting elements in Tuple
     * Tuple Operator
-    * Built-in function in Tuple
+    * Built-in functions of Tuple
 
 ### Defination and characteristic of Tuple
 Python tuples are similar to lists, except that the elements of the tuple cannot be modified</br>
@@ -62,3 +62,46 @@ NameError: name 'tup' is not defined
 |("Hi!") * 2              |("Hi!","Hi!","Hi!")|Copy elements|
 |3 in (1,2,3)             |True               |Determining if an element existing|
 |for i in (1,2,3); print i|1 2 3              |Iteration|
+
+#### Tuple Index
+Tuple is also a sequence, we can access the element at the specified position in the tuple, or we can intercept an element in the index, as shown below
+```python
+L = ('spam', 'Spam', 'SPAM!')
+print L[2]
+print L[-2]
+print L[1:]
+
+'SPAM!'
+'Spam'
+('Spam','SPAM!')
+```
+
+#### Built-in functions of Tuple
+**len(tuple)** return the length of tuple
+```python
+tuple_ = (1,2,3,4)
+print len(tuple_)
+
+4
+```
+**max(tuple)** return the max value in the tuple
+```python
+tuple_ = (1,2,3,4,5)
+print max(tuple)
+
+5
+```
+**min(tuple)** return the minimum value in the tuple
+```python
+tuple_ = (1,2,3,4)
+print min(tuple_)
+
+1
+```
+**tuple(seq)** transfer list to tuple
+```python
+list_ = [1,2,3,4]
+print tuple(list_)
+
+(1,2,3,4)
+```
