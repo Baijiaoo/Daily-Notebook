@@ -7,10 +7,13 @@ Index
 * [Bias and Variance](#bias-and-variance)
   * [Reason causes Bias & Variance](#reason-causes-bias--variance)
   * [Bias & Vairance in Deep Learning](#bias--variance-in-deep-learning)
-  * [Bias/Variance with Boosting/Bagging](#BiasVariance-with-BoostingBagging)
-  * [How to calculate Bias & Variance](#How-to-calculate-Bias--Variance)
-  * [Tradeoff between Bias & Variance](#Tradeoff-between-Bias--Variance)
+  * [Bias/Variance with Boosting/Bagging](#biasvariance-with-boostingbagging)
+  * [How to calculate Bias & Variance](#how-to-calculate-bias--variance)
+  * [Tradeoff between Bias & Variance](#tradeoff-between-bias--variance)
 * [Generating Model and Discriminant Model](#generating-model-and-discriminant-model)
+  * [Connection between two models](#connection-between-two-models)
+  * [Advantages and Disadvantages](#advantages-and-disadvantages)
+  * [Common Models](#common-models)
 <!-- TOC -->
  
 ## Bias and Variance
@@ -58,33 +61,33 @@ Index
  * **Decision Function**: Enter X to return Y, where Y is compared to a threshold and then determine the category of X based on the comparison
  * **Conditional Probability Distribution**: Enter X to return the probability of each category X belongs to, the one with the highest probability as the category to which X belongs to
 * Supervise Learning can be divided to **Generating Model** and **Discriminant Model**
- * Discriminant Model learns **Decision Function** & **Conditional Probability Distribution** directly
- * Generating Model learns **Joint Probability Distribution** `P(X,Y)`firstly, then according to the function of **Conditional Probability Distribution** to calculate `P(X|Y)`
+  * Discriminant Model learns **Decision Function** & **Conditional Probability Distribution** directly
+  * Generating Model learns **Joint Probability Distribution** `P(X,Y)`firstly, then according to the function of **Conditional Probability Distribution** to calculate `P(X|Y)`
  
-### Connection between two models:
+### Connection between two models
 * We can get Discriminant Model from Generating Model, but we can not use Discriminant Model to get Generating Model
 * When existing **hidden features**, we only can use **Generating Model**
 
 ### Advantages and Disadvantages
 * Discrinant Model:
- * Ad:
-  * Facing to prediction, and getting higher learning accuracy
-  * Learning `P(Y|X)` or `f(X)` directly, data can be abstracted to varying degrees, defining features and using features to simplify the learning process
- * Dis
-  * Cannot reflect the characteristics of the training data itself
-  * ..
+  * Ad:
+    * Facing to prediction, and getting higher learning accuracy
+    * Learning `P(Y|X)` or `f(X)` directly, data can be abstracted to varying degrees, defining features and using features to simplify the learning process
+  * Dis
+    * Cannot reflect the characteristics of the training data itself
+    * ..
 * Generating Model:
- * Ad:
-  * The **Joint Probability Distribution** `P(X,Y)` can be restored, and the **Discriminant Model** cannot
-  * **Learning convergence is** faster — when the sample size increases, the learned model can converge to the real model more quickly
-  * When existing **hidden features**, we only can use **Generating Model**
- * Dis:
-  * Process of learning and caculating are complex
-  * ..
+  * Ad:
+    * The **Joint Probability Distribution** `P(X,Y)` can be restored, and the **Discriminant Model** cannot
+    * **Learning convergence is** faster — when the sample size increases, the learned model can converge to the real model more quickly
+    * When existing **hidden features**, we only can use **Generating Model**
+  * Dis:
+    * Process of learning and caculating are complex
+    * ..
  
-### Common Model
+### Common Models
 * Discrinant Model
- * KNN, Perceptron (Neural Network), Decision Tree, Logistic Regression, Maximum Entropy Model, SVM, Lifting Method, Conditional Random Field
+  * KNN, Perceptron (Neural Network), Decision Tree, Logistic Regression, Maximum Entropy Model, SVM, Lifting Method, Conditional Random Field
 * Generating Model:
- * Naive Bayes, Hidden Markov Model, Mixed Gaussian Model, Bayesian Network, Markov Random Field
+  * Naive Bayes, Hidden Markov Model, Mixed Gaussian Model, Bayesian Network, Markov Random Field
   
