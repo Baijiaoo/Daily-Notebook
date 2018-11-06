@@ -19,6 +19,8 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 * :apple: [<font size=+1>WB_Library</font>](/Programming/Python/Library/WB_Library)
 * :pear: [<font size=+1>DB_Library</font>](/Programming/Python/Library/DB_Library)
 
+## Scala
+
 ## JAVA
 
 ## SQL
