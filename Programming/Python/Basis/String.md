@@ -50,24 +50,25 @@ print 'Q' in str_
 False
 ```
 ### Escape String
-Python uses a backslash `\` escape character when you need to use special characters in characters
-|Escape String      |Description      |
-|====               |====             |
-|\(end of the line) |Continuation     |
-|\\                 |BackSlash Symbol |
-|\'                 |Apostrophe       |
-|\''                |Double apstrophe |
-|\a                 |Ringing bell     |
-|\b                 |Back Space       |
-|\e                 |Escaping         |
-|\000               |Blank            |
-|\n                 |Changing Line    |
-|\v                 |Designing Table Vertically|
-|\t                 |Designing Table Horizontally|
-|\r                 |Returning        |
-|\f                 |Changing Page    |
-|\oxx               |Octal Number, \o12 means Returning|
-|\yxx               |Hexadecimal Number. \y12 means Returning|
+Python uses a backslash `\` escape character when you need to use special characters in characters</br>
+
+|<center>Escape String</center>      |<center>Description</center>      |
+|------------------          |------------------:          |
+|`\`(end of the line) |Continuation     |
+|`\\`                 |BackSlash Symbol |
+|`\'`                 |Apostrophe       |
+|`\''`                |Double apstrophe |
+|`\a`                 |Ringing bell     |
+|`\b`                 |Back Space       |
+|`\e`                 |Escaping         |
+|`\000`               |Blank            |
+|`\n`                 |Changing Line    |
+|`\v`                 |Designing Table Vertically|
+|`\t`                 |Designing Table Horizontally|
+|`\r`                 |Returning        |
+|`\f`                 |Changing Page    |
+|`\oxx`               |Octal Number, `\o12` means Returning|
+|`\yxx`               |Hexadecimal Number. `\y12` means Returning|
 
 ### 
 
