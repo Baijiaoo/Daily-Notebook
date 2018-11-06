@@ -57,7 +57,7 @@ False
 Python uses a backslash `\` escape character when you need to use special characters in characters</br>
 
 |<center>Escape String</center>      |<center>Description</center>      |
-|------------------          |------------------:          |
+|------------------          |------------------          |
 |`\`(end of the line) |Continuation     |
 |`\\`                 |BackSlash Symbol |
 |`\'`                 |Apostrophe       |
