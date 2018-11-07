@@ -99,7 +99,22 @@ u'Hello World'
 ### Build-in Functions
 `string.capitalize()` Capitalizaing this first character in string</br>
 `string.center(width)` Centering the string and using space to fill the new string to width</br>
-`string.count(str, beg=0, end=len(string))` Returning the number of `str` in `string`, start is `beg` and end is `end`
+`string.count(str, beg=0, end=len(string))` Returning the number of `str` in `string`, start is `beg` and end is `end`</br>
+`string.decode(encoding='UTF-8',errors='strict')` Using `encoding` to decode `string`</br>
+`string.encode(encoding='UTF-8',errors='strict')` Using `encoding` to encode `string`</br>
+`string.endwith(str, beg=0, end=len(string))` Checking `string` is end with `str`, range from `beg` to `end`</br>
+`string.expandtabs(tabsize=8)` Changing tabs in `string` to space and default `tabsize` is 8</br>
+`string.find(str, beg=0, end=len(string))` Checking whether `str` existing in `string`, ranging from `beg` to `end` and returning the start index, if not existing will return `-1`</br>
+`string.format()` Formatting `string`</br>
+`string.index(str, beg=0, end=len(string))` Checking whether `str` existing in `string`, ranging from `beg` to `end` and returning the start index, if not existing will post `error`</br>
+`string.isalnum()` If at least one character exists in `string` and all of characters are `alpha` or `number`, will return `True` otherwise will return `False`</br>
+`string.isalpha()` If at least one character exists in `string` and all of characters are `alpha`, will return `True`otherwise will return `False`</br>
+`string.isdecimal()` If at least one character exists in `string` and all of characters are `decimal`, will return `True`otherwise will return `False`</br>
+`string.isdigit()` If at least one character exists in `string` and all of characters are `digit`, will return `True`otherwise will return `False`</br>
+`string.isspace()` If at least one character exists in `string` and all of characters are `space`, will return `True`otherwise will return `False`</br>
+
+
+
 
 
 
