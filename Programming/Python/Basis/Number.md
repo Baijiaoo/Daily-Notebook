@@ -7,6 +7,9 @@ Index
 * Defination of Number
 * Basic Operation of Number
   * [Number type tansformation](#number-type-transformation)
+  * [`math` model and `cmath` model](#math-model-and-cmath-model)
+  * [Math Function](#math-function)
+  * [Random number Function](#random-number-function)
 
 ## Defination of Number
 The Python Number data type is used to store numeric values</br>
@@ -21,15 +24,17 @@ Python supports four different numeric types:
 ## Basic Operation of Number
 ### Number type transforamtion
 
-|Function         |Description        |
-|========         |===========        |
-|`int(x,[,base])`   |Transfer x to integer|
-|`long(x,[,base])`  |Transfer x to long integer|
-|`float(x,[,base])` |Transfer x to float|
-|`complex(real[,imag])`|Creating a complex number|
-|`str(x)`           |Transfer x to string|
-|`eval(str)`        |`str` is a expression and return the result of expression|
-|`hex(x)`           |Transfer an integer to hex|
+ |<center>Function</center>              |<center>Description</center>         |
+ |----------           |------------|
+ |`int(x,[,base])`      |Transfer x to integer|
+ |`long(x,[,base])`     |Transfer x to long integer|
+ |`float(x,[,base])`    |Transfer x to float|
+ |`complex(real[,imag])`|Creating a complex number|
+ |`str(x)`              |Transfer x to string|
+ |`eval(str)`           |`str` is a expression and return the result of expression|
+ |`hex(x)`              |Transfer an integer to hex|
+
+
 
 ### math model and cmath model
 The functions commonly used in mathematical operations in Python are basically in the math module and the cmath module.</br>
@@ -51,19 +56,19 @@ dic(cmath)
 
 ### Math Function
 
-|<center>Function</center>       |<center>Description</center>      |
-|========================        |=================                 |
-|`abs(x)`              |Returning the absolute value of `x`         |
-|`math.ceil(x)`        |Returning the up integer, `math.ceil(4.1)`=>`5`|
-|`math.exp(x)`         |Returning the power of x of e|
-|`math.fabs(x)`        |Returning the float type absolute value of `x`|
-|`math.floor(x)`       |Returning the down integer, `math.floor(4.1)`=>`5`|
-|`modf(x)`             |Returning the part of integer and float, both are float type|
-|`log(x)`              |Like math.log(x), `math.log(100,10)`=> `2.0`|
-|`pow(x,y)`            |Returing the power of x of y|
-|`sqrt(x)`             |Returning the square root of x|
+ |<center>Function</center>       |<center>Description</center>      |
+ |-----           |------              |
+ |`abs(x)`              |Returning the absolute value of `x`         |
+ |`math.ceil(x)`        |Returning the up integer, `math.ceil(4.1)`=>`5`|
+ |`math.exp(x)`         |Returning the power of x of e|
+ |`math.fabs(x)`        |Returning the float type absolute value of `x`|
+ |`math.floor(x)`       |Returning the down integer, `math.floor(4.1)`=>`5`|
+ |`modf(x)`             |Returning the part of integer and float, both are float type|
+ |`log(x)`              |Like math.log(x), `math.log(100,10)`=> `2.0`|
+ |`pow(x,y)`            |Returing the power of x of y|
+ |`sqrt(x)`             |Returning the square root of x|
 
-### Random Function
+### Random number Function
 * `choice(seq)` Randomly select a element from seq
 ```python
 import random
