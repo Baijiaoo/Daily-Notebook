@@ -6,6 +6,7 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 ---
 ## Python(2.x, 3.x)
 ### Basis
+* :moon: [<font size=+1>Number</font>](/Programming/Python/Basis/Number.md)
 * :moon: [<font size=+1>String</font>](/Programming/Python/Basis/String.md)
 * :moon: [<font size=+1>List</font>](/Programming/Python/Basis/List.md)
 * :moon: [<font size=+1>Tuple</font>](/Programming/Python/Basis/Tuple.md)
