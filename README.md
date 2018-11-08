@@ -11,6 +11,8 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 * :moon: [<font size=+1>List</font>](/Programming/Python/Basis/List.md)
 * :moon: [<font size=+1>Tuple</font>](/Programming/Python/Basis/Tuple.md)
 * :moon: [<font size=+1>Dict</font>](/Programming/Python/Basis/Dict.md)
+### Advance
+* :moon: [<font size=+1>Re_Exp</font>](/Programming/Python/Advance/Re_Exp.md)
 ### Library
 * :banana: [<font size=+1>OS_Library</font>](/Programming/Python/Library/OS_Library)
 * :melon: [<font size=+1>DA_Library</font>](/Programming/Python/Library/DA_Library)
