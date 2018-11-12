@@ -8,7 +8,7 @@ Index
 * Basic Operation and Function
   * [`re.match` function](#rematch-function)
   * [`re.search` function](#research-function)
-  * [Diff between `re.match` and `re.search`](#diff-between-`re.match`-and-`re.search`)
+  * [Diff between `re.match` and `re.search`](#diff-between-rematch-and-research)
 
 
 ### Defination of Regular Expression
