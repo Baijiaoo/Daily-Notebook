@@ -8,6 +8,8 @@ Index
 * Basic Operation and Function
   * [`re.match` function](#rematch-function)
   * [`re.search` function](#research-function)
+  * [`re.sub` function](#resub-function)
+  * [`re.compile` function](#recompile-function)
   * [Diff between `re.match` and `re.search`](#diff-between-rematch-and-research)
 
 
