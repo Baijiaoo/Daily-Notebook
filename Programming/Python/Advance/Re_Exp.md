@@ -63,7 +63,7 @@ print (re.search('google','www.google.com').span())
 ```
 
 #### `re.sub` function
-`re.sub` retreiving and repalcing sunstrings in strings
+`re.sub` retreiving and repalcing sunstrings in strings</br>
 `re.sub(pattern, repl, string, count=0, flags=0)`
 
 |<center>Parameter</center>|<center>Description</center>|
@@ -83,7 +83,7 @@ print re.sub(r'\D', '', phone)
 1234567890
 ```
 #### `re.compile` function
-`re.compile` creating pattern and used on `re.match` and `re.search`
+`re.compile` creating pattern and used on `re.match` and `re.search`</br>
 `re.compile(pattern[, flags])`
 ```python
 import re
@@ -126,6 +126,15 @@ m.span(2)
 (6,11)
 m.groups()
 'Hello World'
+```
+#### findall()
+`findall()` Finding all matched regular expression and returning a list, if no match returning a empty list
+```python
+import re
+pattern = re.compile(r'\d+')
+m = pattern.findall('1234 google 456 facebook')
+print m
+['1234','456']
 ```
 
 
