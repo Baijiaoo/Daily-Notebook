@@ -6,11 +6,11 @@ Index
 
 * Defination of Regular Expression
 * Basic Operation and Function
-  * [`re.match` function](#rematch-function)
-  * [`re.search` function](#research-function)
-  * [`re.sub` function](#resub-function)
-  * [`re.compile` function](#recompile-function)
-  * [`re.split` function](#resplit-function)
+  * [`re.match()` function](#rematch-function)
+  * [`re.search()` function](#research-function)
+  * [`re.sub()` function](#resub-function)
+  * [`re.compile()` function](#recompile-function)
+  * [`re.split()` function](#resplit-function)
   * [`findall()`](#findall)
   * [Diff between `re.match` and `re.search`](#diff-between-rematch-and-research)
 * [Regular Expression Objects](#regular-expression-objects)
@@ -23,7 +23,7 @@ The `compile` function generates a regular expression object based on a pattern 
 The re module also provides functions that are fully functional with these methods, using a pattern string as their first argument.
 
 ### Basic Operation and Function
-#### `re.match` function
+#### `re.match()` function
 `re.match` attempts to match a pattern from the beginning of the string. If it is not the matching of the starting position, `match()` returns `none`</br>
 
 `re.match(pattern, string, flags=0)`
@@ -51,7 +51,7 @@ print (re.match('google','www.google.com'))
 (0,3)
 None
 ```
-#### `re.search` function
+#### `re.search()` function
 `re.search` scanning the whole string and return the first matched pattern
 `re.search(pattern, string, flags=0)`
 
@@ -64,7 +64,7 @@ print (re.search('google','www.google.com').span())
 (4,10)
 ```
 
-#### `re.sub` function
+#### `re.sub()` function
 `re.sub` retreiving and repalcing sunstrings in strings</br>
 `re.sub(pattern, repl, string, count=0, flags=0)`
 
@@ -84,7 +84,7 @@ print re.sub(r'\D', '', phone)
 123-456-7890
 1234567890
 ```
-#### `re.compile` function
+#### `re.compile()` function
 `re.compile` creating pattern and used on `re.match` and `re.search`</br>
 `re.compile(pattern[, flags])`
 ```python
@@ -141,7 +141,7 @@ m = pattern.findall('1234 google 456 facebook')
 print m
 ['1234','456']
 ```
-#### Diff between `re.match` and `re.search`
+#### Diff between `re.match()` and `re.search()`
 `re.match` only matches the beginning of the string. If the string does not match the regular expression, the match fails, the function returns `None`; and `re.search` matches the entire string until a match is found.
 
 ### Regular Expression Objects
