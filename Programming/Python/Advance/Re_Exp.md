@@ -146,12 +146,12 @@ print m
 
 ### Regular Expression Objects
 * re.RegexObject
- * `re.compile()` returns RegexObject() Object
+  * `re.compile()` returns RegexObject() Object
 * re.MatchObject
- * `group()` returns the matched string
- * `start()` returns the start position of matched string
- * `end()`   returns the end position of matched string
- * `span()`  returns a tuple (strat, end) of matched string
+  * `group()` returns the matched string
+  * `start()` returns the start position of matched string
+  * `end()`   returns the end position of matched string
+  * `span()`  returns a tuple (strat, end) of matched string
 
 
 
