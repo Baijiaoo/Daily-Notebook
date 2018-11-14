@@ -10,8 +10,10 @@ Index
   * [`re.search` function](#research-function)
   * [`re.sub` function](#resub-function)
   * [`re.compile` function](#recompile-function)
+  * [`re.split` function](#resplit-function)
+  * [`findall()`](#findall)
   * [Diff between `re.match` and `re.search`](#diff-between-rematch-and-research)
-
+* [Regular Expression Objects](#regular-expression-objects)
 
 ### Defination of Regular Expression
 A regular expression is a special sequence of characters that helps you easily check if a string matches a pattern.</br>
@@ -127,7 +129,10 @@ m.span(2)
 m.groups()
 'Hello World'
 ```
-#### findall()
+#### `re.split()` function
+`re.split()` Dividing the string into a list according to the substring that can be matched</br>
+`re.split(pattern, string[, maxsplit=0, flags=0])`
+#### `findall()`
 `findall()` Finding all matched regular expression and returning a list, if no match returning a empty list
 ```python
 import re
@@ -136,11 +141,17 @@ m = pattern.findall('1234 google 456 facebook')
 print m
 ['1234','456']
 ```
-
-
 #### Diff between `re.match` and `re.search`
 `re.match` only matches the beginning of the string. If the string does not match the regular expression, the match fails, the function returns `None`; and `re.search` matches the entire string until a match is found.
 
+### Regular Expression Objects
+* re.RegexObject
+ * `re.compile()` returns RegexObject() Object
+* re.MatchObject
+ * `group()` returns the matched string
+ * `start()` returns the start position of matched string
+ * `end()`   returns the end position of matched string
+ * `span()`  returns a tuple (strat, end) of matched string
 
 
 
