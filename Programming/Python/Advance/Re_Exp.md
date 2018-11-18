@@ -146,12 +146,24 @@ print m
 
 ### Regular Expression Objects
 * re.RegexObject
-  * `re.compile()` returns RegexObject() Object
+  * `re.compile()` returns `egexObject()` Object
 * re.MatchObject
   * `group()` returns the matched string
   * `start()` returns the start position of matched string
   * `end()`   returns the end position of matched string
   * `span()`  returns a tuple (strat, end) of matched string
+
+### Regular Expression Modifier - Option Marker
+Regular expressions can contain optional flag modifiers to control the pattern of matches. The modifier is specified as an optional flag. Multiple flags can be specified by bitwise OR`(|)`. For example, `re.I | re.M ` is set to the I and M flags
+
+|<center>Modifer</center>     |Description          |
+|-----------------------      |-----------          |
+|`re.I`                       |Not sensitive to capitalization|
+|`re.L`                       |Do (locale-aware) matching|
+|`re.M`                       |Multiple lines matching, has influence on `^` and `$`|
+|`re.S`                       |     |
+|`re.U`                       |Parsing characters based on Unicode character set, has influence on `\w`,`\W`,`\b`,`\B`|
+|`re.X`                       |This logo gives you a more flexible format so that you can write regular expressions more easily|
 
 
 
