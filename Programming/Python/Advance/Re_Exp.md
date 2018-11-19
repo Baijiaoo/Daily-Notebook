@@ -2,7 +2,7 @@ Regular Expression
 ===
 
 Index
-===
+====
 
 * Defination of Regular Expression
 * Basic Operation and Function
@@ -14,6 +14,8 @@ Index
   * [`findall()`](#findall)
   * [Diff between `re.match` and `re.search`](#diff-between-rematch-and-research)
 * [Regular Expression Objects](#regular-expression-objects)
+* [Regular Expression Option Marker](#regular-expression-option-marker)
+* [Regular Expression Method](#regular-expression-method)
 
 ### Defination of Regular Expression
 A regular expression is a special sequence of characters that helps you easily check if a string matches a pattern.</br>
@@ -153,7 +155,7 @@ print m
   * `end()`   returns the end position of matched string
   * `span()`  returns a tuple (strat, end) of matched string
 
-### Regular Expression Modifier - Option Marker
+### Regular Expression Option Marker
 Regular expressions can contain optional flag modifiers to control the pattern of matches. The modifier is specified as an optional flag. Multiple flags can be specified by bitwise OR`(|)`. For example, `re.I | re.M ` is set to the I and M flags
 
 |<center>Modifer</center>     |Description          |
@@ -164,6 +166,86 @@ Regular expressions can contain optional flag modifiers to control the pattern o
 |`re.S`                       |     |
 |`re.U`                       |Parsing characters based on Unicode character set, has influence on `\w`,`\W`,`\b`,`\B`|
 |`re.X`                       |This logo gives you a more flexible format so that you can write regular expressions more easily|
+
+### Regular Expression Method
+#### Functional Character: 
+`.`,`*`,`+`,`|`,`!`,`^`,`$`,`?`,`/`,etc, they have special function. Especially the `/` character, which is an escaped guide symbol, and the characters following it generally have a special meaning.
+#### Rule delimiter: 
+`[' ']`,`( ' ' )`,`{' '}`, etc., that is, several brackets.
+#### Predefined escape character sets: 
+`/d`,`/w`,`/s` and so on, they begin with the character `/` followed by a specific character to indicate a predefined meaning.
+#### Other special function characters: 
+`#`,`!`,`:`,`-`, etc. They only indicate special meanings in specific situations. For example, `(?# ...)` means a comment, and the contents are ignored.
+
+Let's explain the meaning of these rules one by one, but the order of explanation is not in the above order, but I think it is arranged from shallow to deep, from basic to complex. At the same time, for the sake of intuition, try to give more examples in the process of explanation to facilitate understanding.
+
+`'['']'`
+First, explain how to set the character set. A character enclosed in a square bracket indicates a set of characters that match any of the characters contained in it. For example, `[abc123]` indicates that the characters 'a' ‘b’ ‘c’ ‘1’ ‘2’ ‘3’ meet their requirements. Can be matched.</br>
+In `[' ']` you can also specify the range of a character set by the `-` minus sign. For example, you can use `[a-zA-Z]` to specify the case of the English letter, because the English letters are from small to small The big order is to order. You can't reverse the order of the size, for example, writing `[z-a]` is not right.</br>
+If you write a `^` at the beginning of `[' ']`, it means no, that is, the characters in parentheses do not match. For example,`[^a-zA-Z]` indicates that all English letters are not matched. But if ‘^’ is not at the beginning, it is no longer a fetch, but a self, such as `[a-z^A-Z]`, which matches all English letters and characters `^`.</br>
+
+`'|'`
+The two rules are juxtaposed and joined by `|`, indicating that they can be matched as long as one of them is met. such as
+`[a-zA-Z]|[0-9]` means that the number or letter can be matched. This rule is equivalent to `[a-zA-Z0-9]`</br>
+**Note:** There are two things to note about ‘|’:</br>
+First, it no longer represents or in the `[' ']`, but represents his own character. If you want to represent a `|` character outside of `[' ']`, you must use a backslash, ie `/|`;</br>
+Second, its effective range is the entire rule on both sides. For example, `dog|cat` matches 'dog' and 'cat' instead of 'g' and 'c'. If you want to limit its effective range, you must use a non-capturing group ‘(?: )’ to wrap it up. For example, to match ‘I have a dog’ or 'I have a cat', you need to write `r'I have a (?:dog|cat)'` instead of `r'I have a dog|cat'`</br>
+```python
+import re
+s = 'I have a dog , I have a cat'
+re.findall(r'I have a (?:a dog|a cat)',s)
+['I have a dog','I have a cat']
+```
+
+`'.'` matching all characters
+Matching all characters except the newline `'/n'`. If the `re.S` option is used, all characters including `'/n'` are matched.
+```python
+import re
+s = '123/n456/n789'
+re.findall(r'.',s)
+['123','456','789']
+re.findall(r'.',s,re.S)
+['123/n456/n789']
+```
+
+`'^'` and `'$'` match the beginning and end of the string</br>
+**Note**: that `'^'` cannot be in `'[ ]'`, otherwise the meaning will change. See the description of `'['']'` above. In multi-line mode, they match the beginning and end of each line. See the section on the `re.M` option in the compile function description below.</br>
+
+|<center>Predefined escape character sets</center>       |<center>Description</center>      |
+|------------------------------------------------        |-----------      |
+|`'/d'`|Matching a number, which is equivalent to `[0-9]`|
+|`'/D'`|Matching a non-numeric character, equivalent to `[^0-9]`|
+|`'/w'`|Matching all English letters and numbers, which is equivalent to `[a-zA-Z0-9]`|
+|`'/W'`|Matching non-English letters and numbers,which is equivalant to `[^a-zA-Z0-9]`|
+|`'/s'`|Matching characters such as spaces, tabs, carriage returns, etc., which are equivalent to `[ /t/r/n/f/v]`.(note that there is a space in front of it)|
+|`'/S'`|Matching non-spacer, which is equivalant to `[^ /t/r/n/f/v]`|
+|`'/A'`|Matching the beginning of a string.The difference between it and `'^'` is that `'/A'` only matches the beginning of the entire string, even in the `re.M` mode, it does not match the other lines|
+|`'/Z'`|Matching the end of a string.The difference between it and `'$'` is that `'/Z'` only matches the end of the entire string, even in the `re.M` mode, it does not match the other lines|
+|`'/b'`|Matching the boundary of a word, such as a space, etc., but it is a '0' long character, and the matched string does not include the delimited character. And if you match with `'/s'`, the matching string will contain that delimiter.|
+|`'/B'`|Matching non-boundary characters. It is also a 0 length character|
+
+```python
+import re
+s= '12 34/n56 78/n90'
+re.findall( r'^/d+', s, re.M )
+[12, 56, 90]
+re.findall(r'/A/d+', s, re.M)
+[12]
+```
+
+```python
+import re
+s =  'abc abcde bc bcd'
+re.findall(r'/bbc/b', s)
+[bc]
+re.findall(r'/sbc/s', s)
+[ bc ]
+re.findall(r'/Bbc/w+', s)
+[bcde]
+```
+
+
+
 
 
 
