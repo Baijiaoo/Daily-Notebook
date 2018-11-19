@@ -16,6 +16,9 @@ Index
 * [Regular Expression Objects](#regular-expression-objects)
 * [Regular Expression Option Marker](#regular-expression-option-marker)
 * [Regular Expression Method](#regular-expression-method)
+  * [Basic Operations](#basic-operations)
+  * [Reapting](#repeating)
+  * [Exact match and minimum match](#exact-match-and-minimum-match)
 
 ### Defination of Regular Expression
 A regular expression is a special sequence of characters that helps you easily check if a string matches a pattern.</br>
@@ -179,6 +182,7 @@ Regular expressions can contain optional flag modifiers to control the pattern o
 
 Let's explain the meaning of these rules one by one, but the order of explanation is not in the above order, but I think it is arranged from shallow to deep, from basic to complex. At the same time, for the sake of intuition, try to give more examples in the process of explanation to facilitate understanding.
 
+#### Basic Operations
 `'['']'`
 First, explain how to set the character set. A character enclosed in a square bracket indicates a set of characters that match any of the characters contained in it. For example, `[abc123]` indicates that the characters 'a' ‘b’ ‘c’ ‘1’ ‘2’ ‘3’ meet their requirements. Can be matched.</br>
 In `[' ']` you can also specify the range of a character set by the `-` minus sign. For example, you can use `[a-zA-Z]` to specify the case of the English letter, because the English letters are from small to small The big order is to order. You can't reverse the order of the size, for example, writing `[z-a]` is not right.</br>
@@ -243,6 +247,44 @@ re.findall(r'/sbc/s', s)
 re.findall(r'/Bbc/w+', s)
 [bcde]
 ```
+
+`(?:' ')` No capture group means that when you want to perform some operations on a part of the rule as a whole, such as specifying the number of repetitions, you need to enclose the part of the rule with `(?:' ')`, not just a pair. Parentheses, which will give absolutely unexpected results
+```python
+import re
+s = 'ababab abbabb aabaab'
+re.findall(r'/b(?:ab)+/b', s)
+['ababab']
+
+re.findall(r'/b(ab)/b', s)
+['ab']
+```
+
+`(?#' ')` Python allow you to write comments in regular expression, and the content in `(?#' ')` will be ignored
+
+#### Repeating
+Regular expressions need to match strings of variable length, so it is necessary to indicate a repeating indicator. Python's regular expressions' repeating rule is flexible. The general form of a repeating rule is followed by a character rule followed by a rule indicating the number of repetitions. It has been shown that the previous rule needs to be repeated a certain number of times.</br>
+
+`'*'` zero or multiple times matching</br>
+`'+'` one or multiple times matching
+```python
+import re
+s = ' aaa bbb111 cc22cc 33dd '
+re.findall(r'/b[a-z]+/d*/b',s)
+['aaa','bbb111']
+```
+`'?'` one or zero times matching
+```python
+import re
+s = ' 123 10e3 20e4e4 30ee5 '
+re.findall(r'/b/d+[eE]?/d*/b', s)
+['123','10e3']
+```
+
+#### Exact match and minimum match
+
+
+
+
 
 
 
