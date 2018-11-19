@@ -281,7 +281,30 @@ re.findall(r'/b/d+[eE]?/d*/b', s)
 ```
 
 #### Exact match and minimum match
+Python's regular expression can set the exact matching times:</br>
+`'{m}'` exact matching m times</br>
+`'{m,n}'`minimum matching m times, maximum matching n times</br>
+If you only want to specify a minimum number of times or just specify a maximum number of times, you can empty another parameter. For example, if you want to specify at least 3 times, you can write `{3,}` (note the comma), and if you only want to specify a maximum of 5 times, you can write `{, 5}` , or you can write `{0,5}`
+```python
+import re
+s= ' 1 22 333 4444 55555 666666 '
+re.findall(r'/b/d{3}/b', s)
+['333']
+re.findall(r'/b/d{3,5}/b',s)
+['333','4444','55555']
+re.findall(r'/b//d{,5}b')
+['55555','666666']
+```
 
+**Minimum match**</br>
+`'*'` `'+'` `'?'` are usually as many matching characters as possible. Sometimes we want it to match as little as possible. For example, a c language comment `'/* part 1 */code /* part 2 */'` if the maximum rule is used
+```python
+import re
+s =r '/* part 1 */ code /* part 2 */'
+re.findall(r'//*.*/*/',s)
+['/* part 1 */ code /* part 2 */']
+re.findall(r'//*.*?/*/',s)
+['/* part 1 */' ,'/* part 2 */']
 
 
 
