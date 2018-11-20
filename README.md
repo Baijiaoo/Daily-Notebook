@@ -12,8 +12,8 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 * :moon: [<font size=+1>Tuple</font>](/Programming/Python/Basis/Tuple.md)
 * :moon: [<font size=+1>Dict</font>](/Programming/Python/Basis/Dict.md)
 ### Advance
-* :moon: [<font size=+1>Decoding & Encoding</font>](/Programming/Python/Advance/Decoding-&-Encoding.md)
-* :moon: [<font size=+1>File Reading & Writing</font>](/Programming/Python/Advance/File-Reading-&-Writing.md)
+* :moon: [<font size=+1>Decoding_Encoding</font>](/Programming/Python/Advance/Decoding_Encoding.md)
+* :moon: [<font size=+1>File Reading_Writing</font>](/Programming/Python/Advance/File-Reading_Writing.md)
 * :moon: [<font size=+1>Re_Exp</font>](/Programming/Python/Advance/Re_Exp.md)
 * :moon: [<font size=+1>Multi_Threading</font>](/Programming/Python/Advance/Multi_Threading.md)
 ### Library
