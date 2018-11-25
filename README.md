@@ -17,13 +17,9 @@ This [Notebook](https://github.com/Baijiaoo/Daily-Notebook) is about my daily st
 * :moon: [<font size=+1>Re_Exp</font>](/Programming/Python/Advance/Re_Exp.md)
 * :moon: [<font size=+1>Multi_Threading</font>](/Programming/Python/Advance/Multi_Threading.md)
 ### Library
-* :banana: [<font size=+1>OS_Library</font>](/Programming/Python/Library/OS_Library)
-* :melon: [<font size=+1>DA_Library</font>](/Programming/Python/Library/DA_Library)
-* :watermelon: [<font size=+1>ML_Library</font>](/Programming/Python/Library/ML_Library)
-* :orange: [<font size=+1>DL_Library</font>](/Programming/Python/Library/DL_Library)
-* :lemon: [<font size=+1>DV_Library</font>](/Programming/Python/Library/DV_Library)
-* :apple: [<font size=+1>WB_Library</font>](/Programming/Python/Library/WB_Library)
-* :pear: [<font size=+1>DB_Library</font>](/Programming/Python/Library/DB_Library)
+* :banana: [<font size=+1>Standard_Library</font>](/Programming/Python/Library/Standard_Library)
+* :melon: [<font size=+1>OpenSource_Library</font>](/Programming/Python/Library/OpenSource_Library)
+* :watermelon: [<font size=+1>Customize_Library</font>](/Programming/Python/Library/Customize_Library)
 
 ## Scala
 
